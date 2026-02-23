@@ -92,8 +92,8 @@ Environment name: `pypi`
 4. Tag a release:
 
 ```bash
-git tag v1.1.1
-git push origin v1.1.1
+git tag vX.Y.Z
+git push origin vX.Y.Z
 ```
 
 5. GitHub Actions will publish automatically to PyPI when the tag is pushed.
