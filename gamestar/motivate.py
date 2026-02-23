@@ -3,7 +3,6 @@ from __future__ import annotations
 import random
 from typing import Optional, Sequence
 
-
 DEFAULT_MESSAGES: Sequence[str] = (
     "You are building something powerful.",
     "Every expert was once a beginner.",

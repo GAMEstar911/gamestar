@@ -3,7 +3,6 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Dict, Optional
 
-
 ERROR_EXPLANATIONS: Dict[str, str] = {
     "TypeError": "You used incompatible data types together.",
     "NameError": "You used a variable that does not exist.",
