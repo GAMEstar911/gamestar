@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "gamestar"
-version = "1.1.0"
+version = "1.1.1"
 description = "A lightweight developer assistant for quick code scanning, debugging hints, and motivation."
 readme = "README.md"
 requires-python = ">=3.9"
@@ -35,9 +35,9 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/<your-username>/gamestar"
-Repository = "https://github.com/<your-username>/gamestar"
-Issues = "https://github.com/<your-username>/gamestar/issues"
+Homepage = "https://github.com/GAMEstar911/gamestar"
+Repository = "https://github.com/GAMEstar911/gamestar"
+Issues = "https://github.com/GAMEstar911/gamestar/issues"
 
 [project.scripts]
 gamestar = "gamestar.cli:main"

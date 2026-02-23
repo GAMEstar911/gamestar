@@ -76,30 +76,31 @@ make lint
 
 ## Publish to GitHub and PyPI
 
-1. Create a new repository on GitHub named `gamestar`.
-2. Initialize and push:
+1. Push to GitHub:
 
 ```bash
-git init
-git add .
-git commit -m "Production-ready baseline"
-git branch -M main
-git remote add origin git@github.com:<your-username>/gamestar.git
 git push -u origin main
 ```
 
-3. Tag a release:
+2. Create an account on `https://pypi.org` and create a new project named `gamestar`.
+3. In the PyPI project settings, add a trusted publisher:
+Repository owner: `GAMEstar911`
+Repository name: `gamestar`
+Workflow name: `publish.yml`
+Environment name: `pypi`
+
+4. Tag a release:
 
 ```bash
-git tag v1.1.0
-git push origin v1.1.0
+git tag v1.1.1
+git push origin v1.1.1
 ```
 
-4. Optional PyPI publish:
+5. GitHub Actions will publish automatically to PyPI when the tag is pushed.
+6. Install from PyPI:
 
 ```bash
-python -m build
-python -m twine upload dist/*
+pip install gamestar
 ```
 
 ## License
